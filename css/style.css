@@ -108,6 +108,34 @@ img{
 }
 
 
+/* Added the features section */
+
+.features {
+    border-top: 8px solid #2e2d2d;
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 8rem 0;
+}
+
+.features .container h2 {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+.features .container p {
+    font-size: 2rem;
+    line-height: 1.8;
+}
+
+
+
 .btn {
     background-color: var(--primary-color);
     padding: 1rem 2rem;
