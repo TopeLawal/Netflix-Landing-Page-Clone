@@ -110,7 +110,8 @@ img{
 
 /* Added the features section */
 
-.features {
+.features,
+.faq {
     border-top: 8px solid #2e2d2d;
 }
 
@@ -124,7 +125,7 @@ img{
 }
 
 .features .container h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 800;
     line-height: 1.5;
 }
@@ -132,6 +133,62 @@ img{
 .features .container p {
     font-size: 2rem;
     line-height: 1.8;
+}
+
+.faq .container h2 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.accordion .question {
+    position: relative;
+    background-color: #2e2d2d;
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 3rem;
+    cursor: pointer;
+    outline: #fff;
+}
+
+.accordion .question::after{
+    position: absolute;
+    content: "+";
+    font-size: 4.9rem;
+    right: 3%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.accordion .answer{
+    background-color: #2e2d2d;
+    border-top: 1px solid #000;
+    margin-bottom: 0.8rem;
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 0; 
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.accordion .answer p {
+    font-size: 2.3rem;
+    line-height: 1.8;
+    margin: 2rem;
+}
+
+/* Javascript */
+.accordion.active .answer {
+    height: 30rem;
+}
+
+.accordion.active .question::after{
+    content: 'X';
+    font-size: 3.5rem;
+    transition: 0.5s;
 }
 
 
